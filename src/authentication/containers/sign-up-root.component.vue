@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SignUpForm from '../components/sign-up-form';
+    import SignUpForm from '../components/sign-up-form.component';
 
     export default {
         name: 'SignUpRoot',

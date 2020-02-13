@@ -1,5 +1,5 @@
-import SignInRoot from './containers/sign-in-root';
-import SignUpRoot from './containers/sign-up-root';
+import SignInRoot from './containers/sign-in-root.component';
+import SignUpRoot from './containers/sign-up-root.component';
 
 export const authenticationRoutes = [
     {

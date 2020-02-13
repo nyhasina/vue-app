@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router';
 import { authenticationRoutes } from '../authentication/authentication-routing.module';
-import AuthenticationRoot from './containers/authentication-root';
+import AuthenticationRoot from './containers/authentication-root.component';
 
 const coreRoutes = [
     {

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import SignInForm from '../components/sign-in-form';
+    import SignInForm from '../components/sign-in-form.component';
 
     export default {
         name: 'SignInRoot',
