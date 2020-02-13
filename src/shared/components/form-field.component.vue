@@ -1,7 +1,8 @@
 <template>
     <div class="form-field">
         <label :for="id" v-if="!placeholder && label">{{ label }}</label>
-        <input :type="type" :placeholder="placeholder" :id="id">
+        <input :type="type" :placeholder="placeholder" :id="id" :value="value"
+               v-on:input="$emit('input', $event.target.value)">
     </div>
 </template>
 
@@ -23,7 +24,8 @@
             default: 'text'
         },
         placeholder: String,
-        label: String
+        label: String,
+        value: String
     };
 
     export default {
