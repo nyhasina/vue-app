@@ -34,4 +34,3 @@ new Vue({
     router: coreRoutingModule,
     render: h => h(App)
 }).$mount('#app');
-
