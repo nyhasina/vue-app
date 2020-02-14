@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router';
 import { authenticationRoutes } from './authentication/authentication-routing.module';
 import { homeRoutes } from './home/home-routing.module';
-import AuthenticationRoot from './core/containers/authentication-root.component';
-import HomeRoot from './core/containers/home-root.component';
+import AuthenticationRoot from './core/containers/authentication-root/authentication-root.component';
+import HomeRoot from './core/containers/home-root/home-root.component';
 
 const appRoutes = [
     {
