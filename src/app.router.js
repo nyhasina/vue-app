@@ -1,10 +1,10 @@
 import VueRouter from 'vue-router';
-import { authenticationRoutes } from '../authentication/authentication-routing.module';
-import { homeRoutes } from '../home/home-routing.module';
-import AuthenticationRoot from './containers/authentication-root.component';
-import HomeRoot from './containers/home-root.component';
+import { authenticationRoutes } from './authentication/authentication-routing.module';
+import { homeRoutes } from './home/home-routing.module';
+import AuthenticationRoot from './core/containers/authentication-root.component';
+import HomeRoot from './core/containers/home-root.component';
 
-const coreRoutes = [
+const appRoutes = [
     {
         path: '/authentication',
         component: AuthenticationRoot,
@@ -25,6 +25,6 @@ const coreRoutes = [
     }
 ];
 
-export const coreRoutingModule = new VueRouter({
-    routes: coreRoutes
+export const router = new VueRouter({
+    routes: appRoutes
 });

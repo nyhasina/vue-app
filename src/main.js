@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 import VueX from 'vuex';
 import App from './app';
 import authenticationStore from './authentication/store/authentication.store';
-import { coreRoutingModule } from './core/core-routing.module';
+import { router } from './app.router';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -40,7 +40,7 @@ const store = new VueX.Store({
 });
 
 new Vue({
-    router: coreRoutingModule,
+    router,
     store,
     render: h => h(App)
 }).$mount('#app');
