@@ -2,18 +2,24 @@ import { camelCase, upperFirst } from 'lodash';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueX from 'vuex';
-import App from './app';
+import App from './app.component';
 import { router } from './app.router';
-import { store } from './app.store';
+import authenticationStore from './authentication/store/authentication.store';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 Vue.use(VueX);
 
+const store = new VueX.Store({
+    modules: {
+        authentication: authenticationStore
+    }
+});
+
 const requireComponent = require.context(
     './shared/components',
-    false,
-    /(.)+\.component\.(.)+/
+    true,
+    /(.)+\.component\.(vue|js)/
 );
 
 requireComponent.keys().forEach(fileName => {
