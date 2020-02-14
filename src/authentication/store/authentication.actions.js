@@ -12,6 +12,7 @@ export default {
                     user: payload,
                     token: response.data.token
                 };
+                localStorage.setItem('token', data.token);
                 commit(AuthenticationMutationTypes.SIGN_IN_SUCCESS, data);
                 router.push('/home');
             })

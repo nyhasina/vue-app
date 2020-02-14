@@ -3,8 +3,11 @@
 </template>
 
 <script>
+    import { isUserSignedGuard } from '../guards/authentication.guard';
+
     export default {
-        name: 'HomeRoot'
+        name: 'HomeRoot',
+        beforeRouteEnter: isUserSignedGuard
     };
 </script>
 
