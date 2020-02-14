@@ -1,4 +1,4 @@
-import HomeRoot from './containers/home-root.component';
+import HomeRoot from './containers/home-root/home-root.component';
 
 export const homeRoutes = [
     {

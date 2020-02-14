@@ -1,10 +1,4 @@
-<template>
-    <form>
-        <form-field type="email" placeholder="E-mail address" v-model="email"></form-field>
-        <form-field type="password" placeholder="Password" v-model="password"></form-field>
-        <button @click.prevent="submit">Sign in</button>
-        <router-link to="./sign-up">Have already an account ?</router-link>
-    </form>
+<template src="./sign-in-form.component.html">
 </template>
 
 <script>
@@ -26,6 +20,4 @@
     };
 </script>
 
-<style scoped>
-
-</style>
+<style src="./sign-in-form.component.css" scoped></style>

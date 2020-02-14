@@ -1,13 +1,10 @@
-<template>
-    <div class="container">
-        <sign-in-form v-on:sign-in="signIn"></sign-in-form>
-    </div>
+<template src="./sign-in-root.component.html">
 </template>
 
 <script>
     import { mapActions } from 'vuex';
-    import SignInForm from '../components/sign-in-form.component';
-    import AuthenticationActionTypes from '../store/authentication.action-types';
+    import SignInForm from '../../components/sign-in-form/sign-in-form.component';
+    import AuthenticationActionTypes from '../../store/authentication.action-types';
 
     export default {
         name: 'SignInRoot',
@@ -22,6 +19,4 @@
     };
 </script>
 
-<style scoped>
-
-</style>
+<style src="./sign-in-root.component.css" scoped></style>
