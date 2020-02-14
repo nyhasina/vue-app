@@ -3,8 +3,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueX from 'vuex';
 import App from './app';
-import authenticationStore from './authentication/store/authentication.store';
 import { router } from './app.router';
+import { store } from './app.store';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -33,11 +33,6 @@ requireComponent.keys().forEach(fileName => {
     );
 });
 
-const store = new VueX.Store({
-    modules: {
-        authentication: authenticationStore
-    }
-});
 
 new Vue({
     router,
