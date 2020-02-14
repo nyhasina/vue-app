@@ -26,7 +26,6 @@ requireComponent.keys().forEach(fileName => {
     const componentConfig = requireComponent(fileName);
     const componentName = upperFirst(
         camelCase(
-            // Gets the file name regardless of folder depth
             fileName
                 .split('/')
                 .pop()
